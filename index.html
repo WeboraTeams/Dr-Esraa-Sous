@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Esraa Sous | د. إسراء سوس - Family Medicine</title>
+    
+    <!-- Google Fonts (Tajawal for Arabic, Poppins for English) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- GLightbox CSS for zooming images -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cottoncandy: {
+                            light: '#ffe4ee',   /* Very light pink */
+                            DEFAULT: '#ffb7d5', /* Base cotton candy */
+                            dark: '#ff7eb3',    /* Darker pink for buttons/hover */
+                            accent: '#d81b60',  /* Deep pink for high contrast text */
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Tajawal', 'Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Smooth scrolling and base typography */
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Tajawal', 'Poppins', sans-serif; }
+        
+        /* Glassmorphism utility */
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 183, 213, 0.3);
+        }
+        
+        /* High contrast text outlines for readability */
+        .text-outline {
+            text-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-white via-cottoncandy-light to-white text-slate-900 antialiased font-semibold overflow-x-hidden">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 glass shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-cottoncandy-accent flex items-center gap-2">
+                <i class="fas fa-stethoscope"></i>
+                <span dir="ltr">Dr. Esraa Sous</span>
+            </div>
+            <a href="#gallery" class="px-6 py-2 bg-cottoncandy-dark text-white rounded-full hover:bg-cottoncandy-accent hover:scale-105 transition-all duration-300 shadow-md shadow-cottoncandy-dark/40 font-bold">
+                المقالات الطبية / Articles
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 px-6 lg:px-8 max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-12">
+        
+        <!-- Text Info -->
+        <div class="lg:w-3/5 space-y-6 text-center lg:text-right" data-aos="fade-left">
+            <div class="inline-block px-4 py-1.5 rounded-full bg-white text-cottoncandy-accent border border-cottoncandy font-bold text-sm mb-2 shadow-sm">
+                Consultant Family Medicine | استشاري طب الأسرة
+            </div>
+            
+            <h1 class="text-4xl lg:text-6xl font-extrabold text-slate-900 leading-tight">
+                د. إسراء سوس <br>
+                <span class="text-3xl lg:text-5xl text-cottoncandy-dark dir-ltr block mt-2" dir="ltr">Dr. Esraa Sous</span>
+            </h1>
+            
+            <p class="text-slate-700 text-lg lg:text-xl max-w-2xl mx-auto lg:mx-0 leading-relaxed font-medium">
+                رعاية طبية متكاملة لجميع أفراد الأسرة، تركّز على الوقاية، إدارة الأمراض المزمنة، وتعديل نمط الحياة للوصول إلى صحة مستدامة.
+                <br>
+                <span class="text-sm text-slate-500 mt-2 block" dir="ltr">Comprehensive medical care for the whole family, focusing on prevention, chronic disease management, and lifestyle modification for sustainable health.</span>
+            </p>
+
+            <!-- Working Info Cards -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mt-8">
+                <div class="glass p-4 rounded-2xl flex items-center gap-4 shadow-sm hover:scale-105 transition-transform duration-300 border-l-4 border-l-cottoncandy-dark border-r-0 text-right">
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-cottoncandy-accent text-xl shadow-sm shrink-0">
+                        <i class="far fa-hospital"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-900 text-sm">مكان العمل / Location</h4>
+                        <p class="text-xs text-slate-600">مستشفى د. سليمان الحبيب، الخبر<br>Dr. Sulaiman Al Habib Hospital, Al Khobar</p>
+                    </div>
+                </div>
+
+                <div class="glass p-4 rounded-2xl flex items-center gap-4 shadow-sm hover:scale-105 transition-transform duration-300 border-l-4 border-l-cottoncandy-dark border-r-0 text-right">
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-cottoncandy-accent text-xl shadow-sm shrink-0">
+                        <i class="far fa-clock"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-900 text-sm">أوقات العمل / Hours</h4>
+                        <p class="text-xs text-slate-600">يومياً عدا الجمعة (7 ص - 3 فجراً)<br>Everyday except Fri (7 AM - 3 AM)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Doctor Picture -->
+        <div class="lg:w-2/5 flex justify-center lg:justify-end" data-aos="fade-right">
+            <div class="relative w-72 h-72 lg:w-96 lg:h-96 rounded-full p-2 bg-gradient-to-tr from-cottoncandy-dark to-cottoncandy group hover:scale-105 transition-transform duration-500 shadow-2xl shadow-cottoncandy-dark/30">
+                <img src="profile.jpg" alt="Dr. Esraa Sous" class="w-full h-full object-cover rounded-full border-4 border-white" onerror="this.src='https://ui-avatars.com/api/?name=Esraa+Sous&background=ffe4ee&color=d81b60&size=512&font-size=0.33'">
+                
+                <!-- Floating Badge -->
+                <div class="absolute bottom-4 right-4 bg-white px-4 py-2 rounded-full shadow-lg flex items-center gap-2 group-hover:-translate-y-2 transition-transform duration-300">
+                    <span class="relative flex h-3 w-3">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+                    </span>
+                    <span class="text-xs font-bold text-slate-800">متاحة للحجز / Available</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services / What She Treats -->
+    <section class="py-16 bg-white relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl font-extrabold text-slate-900">مجالات التخصص والعلاج</h2>
+                <p class="text-cottoncandy-accent font-bold mt-1" dir="ltr">What She Treats</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-cottoncandy-light/30 p-6 rounded-3xl border border-cottoncandy-light hover:bg-cottoncandy-light/60 hover:-translate-y-2 hover:shadow-xl transition-all duration-300 text-center group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center text-cottoncandy-accent text-2xl mb-4 group-hover:scale-110 transition-transform duration-300 shadow-sm">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-800 mb-2">الأمراض المزمنة</h3>
+                    <p class="text-sm text-slate-600">إدارة السكري، ضغط الدم، والكوليسترول لضمان حياة صحية ومستقرة.</p>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="bg-cottoncandy-light/30 p-6 rounded-3xl border border-cottoncandy-light hover:bg-cottoncandy-light/60 hover:-translate-y-2 hover:shadow-xl transition-all duration-300 text-center group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center text-cottoncandy-accent text-2xl mb-4 group-hover:scale-110 transition-transform duration-300 shadow-sm">
+                        <i class="fas fa-weight"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-800 mb-2">إدارة السمنة والوزن</h3>
+                    <p class="text-sm text-slate-600">تقييم وعلاج السمنة باستخدام أحدث البروتوكولات الطبية وتعديل نمط الحياة.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-cottoncandy-light/30 p-6 rounded-3xl border border-cottoncandy-light hover:bg-cottoncandy-light/60 hover:-translate-y-2 hover:shadow-xl transition-all duration-300 text-center group" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center text-cottoncandy-accent text-2xl mb-4 group-hover:scale-110 transition-transform duration-300 shadow-sm">
+                        <i class="fas fa-apple-alt"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-800 mb-2">التغذية الوقائية</h3>
+                    <p class="text-sm text-slate-600">تخطيط برامج التغذية السريرية لتحسين مستويات الطاقة والصحة العامة.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-cottoncandy-light/30 p-6 rounded-3xl border border-cottoncandy-light hover:bg-cottoncandy-light/60 hover:-translate-y-2 hover:shadow-xl transition-all duration-300 text-center group" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center text-cottoncandy-accent text-2xl mb-4 group-hover:scale-110 transition-transform duration-300 shadow-sm">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-800 mb-2">الرعاية الشاملة</h3>
+                    <p class="text-sm text-slate-600">تشخيص وعلاج الأمراض الشائعة والالتهابات لجميع الفئات العمرية.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Infographics Gallery Section -->
+    <section id="gallery" class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="text-3xl font-extrabold text-slate-900 mb-2">دليل إدارة الوزن والتغذية</h2>
+            <p class="text-slate-600 max-w-2xl mx-auto">مجموعة إرشادية طبية شاملة للتعرف على السمنة، طرق العلاج، والأنظمة الغذائية الصحية. <br> <span class="text-cottoncandy-accent text-sm" dir="ltr">Click any image to enlarge and read.</span></p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            
+            <!-- Generate 14 Cards using Javascript-like structure logic but pure HTML -->
+            <!-- To save space and maintain exact precision, here are the 14 interactive cards -->
+            
+            <!-- Card 1 -->
+            <div class="glass rounded-3xl p-4 flex flex-col sm:flex-row gap-6 items-center hover:scale-[1.02] hover:shadow-lg hover:shadow-cottoncandy-dark/20 transition-all duration-300" data-aos="fade-up">
+                <a href="image.png" class="glightbox sm:w-1/3 shrink-0 relative group rounded-2xl overflow-hidden block">
+                    <div class="absolute inset-0 bg-cottoncandy-dark/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                        <i class="fas fa-expand-arrows-alt text-white text-3xl"></i>
+                    </div>
+                    <img src="image.png" alt="Self-Monitoring" class="w-full h-40 sm:h-48 object-cover group-hover:scale-110 transition-transform duration-500">
+                </a>
+                <div class="sm:w-2/3 text-right">
+                    <h3 class="text-xl font-bold text-slate-800 mb-1">المتابعة الذاتية وإدارة الوزن</h3>
+                    <p class="text-xs text-cottoncandy-accent mb-3 uppercase" dir="ltr">Self-Monitoring & Weight Management</p>
+                    <p class="text-slate-600 text-sm leading-relaxed">أدوات وتطبيقات لتتبع الوزن والنشاط البدني لضمان نجاح الخطة العلاجية وتحسين النتائج الصحية.</p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="glass rounded-3xl p-4 flex flex-col sm:flex-row gap-6 items-center hover:scale-[1.02] hover:shadow-lg hover:shadow-cottoncandy-dark/20 transition-all duration-300" data-aos="fade-up">
+                <a href="image_2.png" class="glightbox sm:w-1/3 shrink-0 relative group rounded-2xl overflow-hidden block">
+                    <div class="absolute inset-0 bg-cottoncandy-dark/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                        <i class="fas fa-expand-arrows-alt text-white text-3xl"></i>
+                    </div>
+                    <img src="image_2.png" alt="Resistance" class="w-full h-40 sm:h-48 object-cover group-hover:scale-110 transition-transform duration-500">
+                </a>
+                <div class="sm:w-2/3 text-right">
+                    <h3 class="text-xl font-bold text-slate-800 mb-1">تمارين المقاومة</h3>
+                    <p class="text-xs text-cottoncandy-accent mb-3 uppercase" dir="ltr">Resistance Exercises</p>
+                    <p class="text-slate-600 text-sm leading-relaxed">أهمية تمارين المقاومة في تقوية العضلات، تحسين اللياقة، وتقليل كتلة الدهون لتحسين مكونات الجسم.</p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="glass rounded-3xl p-4 flex flex-col sm:flex-row gap-6 items-center hover:scale-[1.02] hover:shadow-lg hover:shadow-cottoncandy-dark/20 transition-all duration-300" data-aos="fade-up">
+                <a href="image_3.png" class="glightbox sm:w-1/3 shrink-0 relative group rounded-2xl overflow-hidden block">
+                    <div class="absolute inset-0 bg-cottoncandy-dark/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                        <i class="fas fa-expand-arrows-alt text-white text-3xl"></i>
+                    </div>
+                    <img src="image_3.png" alt="Assessment" class="w-full h-40 sm:h-48 object-cover group-hover:scale-110 transition-transform duration-500">
+                </a>
+                <div class="sm:w-2/3 text-right">
+                    <h3 class="text-xl font-bold text-slate-800 mb-1">تقييم السمنة</h3>
+                    <p class="text-xs text-cottoncandy-accent mb-3 uppercase" dir="ltr">Obesity Assessment</p>
+                    <p class="text-slate-600 text-sm leading-relaxed">قياسات أدق لتقييم المخاطر الصحية وتوزيع الدهون في الجسم مثل نسبة محيط الخصر للطول.</p>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="glass rounded-3xl p-4 flex flex-col sm:flex-row gap-6 items-center hover:scale-[1.02] hover:shadow-lg hover:shadow-cottoncandy-dark/20 transition-all duration-300" data-aos="fade-up">
+                <a href="image_4.png" class="glightbox sm:w-1/3 shrink-0 relative group rounded-2xl overflow-hidden block">
+                    <div class="absolute inset-0 bg-cottoncandy-dark/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                        <i class="fas fa-expand-arrows-alt text-white text-3xl"></i>
+                    </div>
+                    <img src="image_4.png" alt="Cardio" class="w-full h-40 sm:h-48 object-cover group-hover:scale-110 transition-transform duration-500">
+                </a>
+                <div class="sm:w-2/3 text-right">
+                    <h3 class="text-xl font-bold text-slate-800 mb-1">النشاط البدني وإدارة الوزن</h3>
+                    <p class="text-xs text-cottoncandy-accent mb-3 uppercase" dir="ltr">Cardio & Physical Activity</p>
+                    <p class="text-slate-600 text-sm leading-relaxed">دور الأنشطة الهوائية (الكارديو) في تحسين صحة القلب والأوعية الدموية والمساعدة في إنقاص الوزن.</p>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="glass rounded-3xl p-4 flex flex-col sm:flex-row gap-6 items-center hover:scale-[1.02] hover:shadow-lg hover:shadow-cottoncandy-dark/20 transition-all duration-300" data-aos="fade-up">
+                <a href="image_5.png" class="glightbox sm:w-1/3 shrink-0 relative group rounded-2xl overflow-hidden block">
+                    <div class="absolute inset-0 bg-cottoncandy-dark/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                        <i class="fas fa-expand-arrows-alt text-white text-3xl"></i>
+                    </div>
+                    <img src="image_5.png" alt="Treatment" class="w-full h-40 sm:h-48 object-cover group-hover:scale-110 transition-transform duration-500">
+                </a>
+                <div class="sm:w-2/3 text-right">
+                    <h3 class="text-xl font-bold text-slate-800 mb-1">خيارات علاج السمنة</h3>
+                    <p class="text-xs text-cottoncandy-accent mb-3 uppercase" dir="ltr">Obesity Treatment Options</p>
+                    <p class="text-slate-600 text-sm leading-relaxed">الخيارات المتعددة التي تناسب كل حالة، من تغييرات نمط الحياة إلى الأدوية والتدخلات الجراحية.</p>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="glass rounded-3xl p-4 flex flex-col sm:flex-row gap-6 items-center hover:scale-[1.02] hover:shadow-lg hover:shadow-cottoncandy-dark/20 transition-all duration-300" data-aos="fade-up">
+                <a href="image_6.png" class="glightbox sm:w-1/3 shrink-0 relative group rounded-2xl overflow-hidden block">
+                    <div class="absolute inset-0 bg-cottoncandy-dark/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                        <i class="fas fa-expand-arrows-alt text-white text-3xl"></i>
+                    </div>
+                    <img src="image_6.png" alt="BMI" class="w-full h-40 sm:h-48 object-cover group-hover:scale-110 transition-transform duration-500">
+                </a>
+                <div class="sm:w-2/3 text-right">
+                    <h3 class="text-xl font-bold text-slate-800 mb-1">مؤشر كتلة الجسم (BMI)</h3>
+                    <p class="text-xs text-cottoncandy-accent mb-3 uppercase" dir="ltr">BMI Classification</p>
+                    <p class="text-slate-600 text-sm leading-relaxed">فهم درجات السمنة والمضاعفات الصحية المتعلقة بها وكيفية حساب مؤشر كتلة الجسم.</p>
+                </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="glass rounded-3xl p-4 flex flex-col sm:flex-row gap-6 items-center hover:scale-[1.02] hover:shadow-lg hover:shadow-cottoncandy-dark/20 transition-all duration-300" data-aos="fade-up">
+                <a href="image_7.png" class="glightbox sm:w-1/3 shrink-0 relative group rounded-2xl overflow-hidden block">
+                    <div class="absolute inset-0 bg-cottoncandy-dark/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                        <i class="fas fa-expand-arrows-alt text-white text-3xl"></i>
+                    </div>
+                    <img src="image_7.png" alt="Factors" class="w-full h-40 sm:h-48 object-cover group-hover:scale-110 transition-transform duration-500">
+                </a>
+                <div class="sm:w-2/3 text-right">
+                    <h3 class="text-xl font-bold text-slate-800 mb-1">العوامل المساهمة في السمنة</h3>
+                    <p class="text-xs text-cottoncandy-accent mb-3 uppercase" dir="ltr">Contributing Factors</p>
+                    <p class="text-slate-600 text-sm leading-relaxed">نظرة شاملة على العوامل البيئية، النفسية، والطبية التي تؤثر على توازن الطاقة في الجسم.</p>
+                </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="glass rounded-3xl p-4 flex flex-col sm:flex-row gap-6 items-center hover:scale-[1.02] hover:shadow-lg hover:shadow-cottoncandy-dark/20 transition-all duration-300" data-aos="fade-up">
+                <a href="image_8.png" class="glightbox sm:w-1/3 shrink-0 relative group rounded-2xl overflow-hidden block">
+                    <div class="absolute inset-0 bg-cottoncandy-dark/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                        <i class="fas fa-expand-arrows-alt text-white text-3xl"></i>
+                    </div>
+                    <img src="image_8.png" alt="Long Term" class="w-full h-40 sm:h-48 object-cover group-hover:scale-110 transition-transform duration-500">
+                </a>
+                <div class="sm:w-2/3 text-right">
+                    <h3 class="text-xl font-bold text-slate-800 mb-1">إدارة السمنة على المدى الطويل</h3>
+                    <p class="text-xs text-cottoncandy-accent mb-3 uppercase" dir="ltr">Long-Term Management</p>
+                    <p class="text-slate-600 text-sm leading-relaxed">استراتيجيات أساسية للحفاظ على نزول الوزن وتأسيس عادات مستدامة لحياة صحية أفضل.</p>
+                </div>
+            </div>
+
+            <!-- Card 9 -->
+            <div class="glass rounded-3xl p-4 flex flex-col sm:flex-row gap-6 items-center hover:scale-[1.02] hover:shadow-lg hover:shadow-cottoncandy-dark/20 transition-all duration-300" data-aos="fade-up">
+                <a href="image_9.png" class="glightbox sm:w-1/3 shrink-0 relative group rounded-2xl overflow-hidden block">
+                    <div class="absolute inset-0 bg-cottoncandy-dark/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                        <i class="fas fa-expand-arrows-alt text-white text-3xl"></i>
+                    </div>
+                    <img src="image_9.png" alt="Benefits" class="w-full h-40 sm:h-48 object-cover group-hover:scale-110 transition-transform duration-500">
+                </a>
+                <div class="sm:w-2/3 text-right">
+                    <h3 class="text-xl font-bold text-slate-800 mb-1">الفوائد الصحية لنزول الوزن</h3>
+                    <p class="text-xs text-cottoncandy-accent mb-3 uppercase" dir="ltr">Health Benefits of Weight Loss</p>
+                    <p class="text-slate-600 text-sm leading-relaxed">التأثير الإيجابي المباشر لنزول الوزن على تحسين مستوى السكر، ضغط الدم، وجودة النوم.</p>
+                </div>
+            </div>
+
+            <!-- Card 10 -->
+            <div class="glass rounded-3xl p-4 flex flex-col sm:flex-row gap-6 items-center hover:scale-[1.02] hover:shadow-lg hover:shadow-cottoncandy-dark/20 transition-all duration-300" data-aos="fade-up">
+                <a href="image_10.png" class="glightbox sm:w-1/3 shrink-0 relative group rounded-2xl overflow-hidden block">
+                    <div class="absolute inset-0 bg-cottoncandy-dark/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                        <i class="fas fa-expand-arrows-alt text-white text-3xl"></i>
+                    </div>
+                    <img src="image_10.png" alt="Plate" class="w-full h-40 sm:h-48 object-cover group-hover:scale-110 transition-transform duration-500">
+                </a>
+                <div class="sm:w-2/3 text-right">
+                    <h3 class="text-xl font-bold text-slate-800 mb-1">التوصيات الغذائية (الطبق الصحي)</h3>
+                    <p class="text-xs text-cottoncandy-accent mb-3 uppercase" dir="ltr">Healthy Plate Breakdown</p>
+                    <p class="text-slate-600 text-sm leading-relaxed">قاعدة تقسيم الطبق لتوفير السعرات الحرارية والطاقة اللازمة بطريقة متوازنة ومخصصة.</p>
+                </div>
+            </div>
+
+            <!-- Card 11 -->
+            <div class="glass rounded-3xl p-4 flex flex-col sm:flex-row gap-6 items-center hover:scale-[1.02] hover:shadow-lg hover:shadow-cottoncandy-dark/20 transition-all duration-300" data-aos="fade-up">
+                <a href="image_11.png" class="glightbox sm:w-1/3 shrink-0 relative group rounded-2xl overflow-hidden block">
+                    <div class="absolute inset-0 bg-cottoncandy-dark/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                        <i class="fas fa-expand-arrows-alt text-white text-3xl"></i>
+                    </div>
+                    <img src="image_11.png" alt="Protein" class="w-full h-40 sm:h-48 object-cover group-hover:scale-110 transition-transform duration-500">
+                </a>
+                <div class="sm:w-2/3 text-right">
+                    <h3 class="text-xl font-bold text-slate-800 mb-1">توصيات البروتين اليومية</h3>
+                    <p class="text-xs text-cottoncandy-accent mb-3 uppercase" dir="ltr">Protein Recommendations</p>
+                    <p class="text-slate-600 text-sm leading-relaxed">أهمية البروتين في الحفاظ على الكتلة العضلية، تعزيز الشبع، والمصادر الطبيعية الغنية به.</p>
+                </div>
+            </div>
+
+            <!-- Card 12 -->
+            <div class="glass rounded-3xl p-4 flex flex-col sm:flex-row gap-6 items-center hover:scale-[1.02] hover:shadow-lg hover:shadow-cottoncandy-dark/20 transition-all duration-300" data-aos="fade-up">
+                <a href="image_12.png" class="glightbox sm:w-1/3 shrink-0 relative group rounded-2xl overflow-hidden block">
+                    <div class="absolute inset-0 bg-cottoncandy-dark/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                        <i class="fas fa-expand-arrows-alt text-white text-3xl"></i>
+                    </div>
+                    <img src="image_12.png" alt="Carbs" class="w-full h-40 sm:h-48 object-cover group-hover:scale-110 transition-transform duration-500">
+                </a>
+                <div class="sm:w-2/3 text-right">
+                    <h3 class="text-xl font-bold text-slate-800 mb-1">الكربوهيدرات والطاقة</h3>
+                    <p class="text-xs text-cottoncandy-accent mb-3 uppercase" dir="ltr">Carbohydrates</p>
+                    <p class="text-slate-600 text-sm leading-relaxed">اختيار الكربوهيدرات الصحية مثل الحبوب الكاملة لتزويد الجسم بالطاقة ودعم وظائف الدماغ.</p>
+                </div>
+            </div>
+
+            <!-- Card 13 -->
+            <div class="glass rounded-3xl p-4 flex flex-col sm:flex-row gap-6 items-center hover:scale-[1.02] hover:shadow-lg hover:shadow-cottoncandy-dark/20 transition-all duration-300" data-aos="fade-up">
+                <a href="image_13.png" class="glightbox sm:w-1/3 shrink-0 relative group rounded-2xl overflow-hidden block">
+                    <div class="absolute inset-0 bg-cottoncandy-dark/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                        <i class="fas fa-expand-arrows-alt text-white text-3xl"></i>
+                    </div>
+                    <img src="image_13.png" alt="Fats" class="w-full h-40 sm:h-48 object-cover group-hover:scale-110 transition-transform duration-500">
+                </a>
+                <div class="sm:w-2/3 text-right">
+                    <h3 class="text-xl font-bold text-slate-800 mb-1">الدهون الغذائية الصحية</h3>
+                    <p class="text-xs text-cottoncandy-accent mb-3 uppercase" dir="ltr">Healthy Fats</p>
+                    <p class="text-slate-600 text-sm leading-relaxed">كيفية دمج الدهون الصحية في النظام الغذائي لدعم صحة القلب، امتصاص الفيتامينات، وتقليل الالتهابات.</p>
+                </div>
+            </div>
+
+            <!-- Card 14 -->
+            <div class="glass rounded-3xl p-4 flex flex-col sm:flex-row gap-6 items-center hover:scale-[1.02] hover:shadow-lg hover:shadow-cottoncandy-dark/20 transition-all duration-300" data-aos="fade-up">
+                <a href="image_14.png" class="glightbox sm:w-1/3 shrink-0 relative group rounded-2xl overflow-hidden block">
+                    <div class="absolute inset-0 bg-cottoncandy-dark/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                        <i class="fas fa-expand-arrows-alt text-white text-3xl"></i>
+                    </div>
+                    <img src="image_14.png" alt="Fiber" class="w-full h-40 sm:h-48 object-cover group-hover:scale-110 transition-transform duration-500">
+                </a>
+                <div class="sm:w-2/3 text-right">
+                    <h3 class="text-xl font-bold text-slate-800 mb-1">الألياف الغذائية والهضم</h3>
+                    <p class="text-xs text-cottoncandy-accent mb-3 uppercase" dir="ltr">Dietary Fiber</p>
+                    <p class="text-slate-600 text-sm leading-relaxed">أهمية الألياف في تحسين صحة الجهاز الهضمي، منع الإمساك، ودعم ضبط الوزن والوقاية من الأمراض.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer with Socials -->
+    <footer class="bg-slate-900 text-white pt-16 pb-6 mt-12 rounded-t-[3rem] relative overflow-hidden">
+        <!-- Abstract Pink background blur inside footer -->
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-96 bg-cottoncandy-dark/20 rounded-full blur-[100px] pointer-events-none"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
+            <h3 class="text-2xl font-bold mb-6">تواصل مع د. إسراء <br> <span class="text-sm text-cottoncandy" dir="ltr">Connect with Dr. Esraa</span></h3>
+            
+            <!-- Clickable Social Icons (Mobile & Desktop friendly) -->
+            <div class="flex justify-center gap-6 mb-12" dir="ltr">
+                <a href="https://snapchat.com/add/YOUR_USER" target="_blank" class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-xl hover:bg-[#FFFC00] hover:text-black hover:scale-110 hover:shadow-lg transition-all duration-300" aria-label="Snapchat">
+                    <i class="fab fa-snapchat-ghost"></i>
+                </a>
+                <a href="https://instagram.com/YOUR_USER" target="_blank" class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-xl hover:bg-gradient-to-tr hover:from-[#f09433] hover:via-[#dc2743] hover:to-[#bc1888] hover:text-white hover:scale-110 hover:shadow-lg transition-all duration-300" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://tiktok.com/@YOUR_USER" target="_blank" class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-xl hover:bg-black hover:text-white hover:scale-110 hover:shadow-lg transition-all duration-300" aria-label="TikTok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="https://facebook.com/YOUR_USER" target="_blank" class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-xl hover:bg-[#1877F2] hover:text-white hover:scale-110 hover:shadow-lg transition-all duration-300" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </div>
+
+            <div class="border-t border-white/10 pt-6 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-400 gap-4">
+                <p>&copy; 2026 Dr. Esraa Sous. All Rights Reserved.</p>
+                <p class="opacity-50 tracking-wider">made by <a href="#" class="font-bold text-cottoncandy-dark hover:text-cottoncandy transition-colors">Webora Team Agency</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <script>
+        // Initialize Scroll Animations
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 50,
+        });
+
+        // Initialize Lightbox for 14 Images
+        const lightbox = GLightbox({
+            selector: '.glightbox',
+            touchNavigation: true,
+            loop: true,
+            zoomable: true,
+        });
+    </script>
+</body>
+</html>
